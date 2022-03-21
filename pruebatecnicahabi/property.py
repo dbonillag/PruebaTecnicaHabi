@@ -11,7 +11,6 @@ def search_properties(**kwargs) -> List[Dict]:
     properties = select_properties(**kwargs)
     if properties:
         properties_list = map_properties(properties)
-        #properties_list = json.dumps(properties_list, indent=4)
         return properties_list
     return []
 
