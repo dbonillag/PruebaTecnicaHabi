@@ -11,9 +11,9 @@ class PropertyController(object):
     @cherrypy.tools.json_out()
     def search_properties(self, **kwargs) -> List[Dict]:
         """
-        Search properties
-        :param kwargs:
-        :return:
+        Get method to return the information of the properties that meet the filter
+        :param kwargs: filters
+        :return: List with properties in json format
         """
         if cherrypy.request.method == 'GET':
             try:

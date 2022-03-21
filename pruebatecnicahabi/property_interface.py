@@ -7,6 +7,11 @@ from connection import get_connection
 
 
 def select_properties(**kwargs) -> List[Tuple]:
+    """
+    Query to select the properties to search
+    :param kwargs: filters
+    :return: Property list in tuple format
+    """
     vals = []
     status_filter = ""
     if kwargs.get("status"):

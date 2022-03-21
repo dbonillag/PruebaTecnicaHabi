@@ -4,7 +4,7 @@ from mysql.connector import connect
 def get_connection() -> object:
     """
     mysql database connection
-    :return:
+    :return: Connection to mysql database
     """
     connection = connect(
         host="3.130.126.210",
